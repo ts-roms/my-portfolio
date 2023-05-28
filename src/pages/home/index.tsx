@@ -124,7 +124,7 @@ const ProfilePage = ({ }: PageProps) => {
               </span>
             </h2>
           </div>
-          <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full !hidden">
+          <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
             <div className="border border-gray-800 flex flex-col overflow-hidden transition-shadow duration-300 rounded shadow-md">
               <div className="p-5 flex flex-col bg-white flex-1">
                 <h1 className="inline-block mb-3 text-2xl font-bold leading-5">Book Me</h1>
