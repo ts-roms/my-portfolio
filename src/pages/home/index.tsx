@@ -127,34 +127,18 @@ const ProfilePage = ({ }: PageProps) => {
           <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full !hidden">
             <div className="border border-gray-800 flex flex-col overflow-hidden transition-shadow duration-300 rounded shadow-md">
               <div className="p-5 flex flex-col bg-white flex-1">
-                <h1 className="inline-block mb-3 text-2xl font-bold leading-5">ConnectME</h1>
-                <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5">Social Media</h2>
-                <p className="mb-2 text-gray-700">ConnectME is a social media application that allows users to create an account, make posts, and interact with other users. It is built using the MERN stack (MongoDB, Express, React, Node.js) and is deployed on Heroku.</p>
-                <div className="relative inline-block text-left">
-                  <div>
-                    <button type="button" className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                      Demo Account
-                      <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
-                      </svg>
-                    </button>
-                  </div>
-                  <div className="absolute w-full right-0 z-10 mt-2 origin-top-right rounded-md bg-white shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
-                    <div className="py-1" role="none">
-                      <p className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex={-1} id="menu-item-2">
-                        Email: demo@example.com
-                      </p>
-                      <p className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex={-1} id="menu-item-2">
-                        Password: Demo1234$
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <h1 className="inline-block mb-3 text-2xl font-bold leading-5">Book Me</h1>
+                <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5">Book Me App</h2>
+                <p className="mb-2 text-gray-700">Book Me App</p>
                 <div className="flex flex-wrap space-x-2 mt-5">
                   <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5">Technologies:</h2>
-                  <span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">ReactJS</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">Redux</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">TailwindCSS</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">JavaScript</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">TypeScript</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">NodeJS</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">Express</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">MongoDB</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">GraphQL</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">Webpack</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">OAuth2</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">FontAwesome</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">Heroku</span>
+                  <span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">React TypeScript</span>
+                  <span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">Redux</span>
+                  <span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">TailwindCSS</span>
+                  <span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">TypeScript</span>
+                  <span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">Vercel</span>
                 </div>
-                <div className="flex flex-wrap space-x-2 mt-5"><a href="#" target="_blank" rel="noreferrer" aria-label="" className="inline-flex px-4 py-2 items-center transform font-semibold border transition duration-300 hover:scale-105 shadow hover:shadow-lg">Live Demo</a><a href="https://github.com/jimenezraul/social-media" target="_blank" rel="noreferrer" aria-label="" className="inline-flex bg-blue-500 hover:bg-blue-700 shadow hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:scale-105 text-white">Source Code</a></div>
+                <div className="flex flex-wrap space-x-2 mt-5"><a href="#" target="_blank" rel="noreferrer" aria-label="" className="inline-flex px-4 py-2 items-center transform font-semibold border transition duration-300 hover:scale-105 shadow hover:shadow-lg">Live Demo</a><a href="https://github.com/ts-roms/bookme-app.git" target="_blank" rel="noreferrer" aria-label="" className="inline-flex bg-blue-500 hover:bg-blue-700 shadow hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:scale-105 text-white">Source Code</a></div>
               </div>
             </div>
 
