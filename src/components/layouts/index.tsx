@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Header from "./headers/header";
+import Footer from "./footer";
 
 
 interface PageProps {
@@ -16,6 +17,7 @@ const Layout = (
     <main>
       {children}
     </main>
+    <Footer />
     </>
   )
 }

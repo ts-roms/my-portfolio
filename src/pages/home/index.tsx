@@ -1,6 +1,29 @@
+import { backend, frontend, tools } from "../../data/skills";
 
+interface PageProps { }
 
-const ProfilePage: React.FC = () => {
+const ProfilePage = ({ }: PageProps) => {
+
+  const contactMe = [
+    {
+      link: 'mailto:rcena.msi@gmail.com',
+      icon: <i className="fa-solid fa-envelope text-blue-700 text-3xl "></i>,
+      title: 'Email',
+      description: "Let's get in touch."
+    },
+    {
+      link: 'https://www.linkedin.com/in/romario-cena/',
+      icon: <i className="fa-brands fa-linkedin text-blue-700 text-3xl "></i>,
+      title: 'LinkedIn',
+      description: "Let's connect."
+    },
+    {
+      link: 'https://github.com/ts-roms/',
+      icon: <i className="fa-brands fa-github text-blue-700 text-3xl "></i>,
+      title: 'GitHub',
+      description: 'Check out my repos.'
+    }
+  ]
   return (
     <>
       <div className="overflow-hidden">
@@ -39,70 +62,8 @@ const ProfilePage: React.FC = () => {
           </div>
         </div>
       </div>
-      <div id="contact-me" className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12">
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-            <span className="relative inline-block">
-              <svg viewBox="0 0 52 24" fill="currentColor" className="absolute top-0 -right-28 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
-                <defs>
-                  <pattern id="df31b9f6-a505-42f8-af91-d2b7c3218e5c" x="0" y="0" width=".135" height=".30">
-                    <circle cx="1" cy="1" r=".7"></circle>
-                  </pattern>
-                </defs>
-                <rect fill="url(#df31b9f6-a505-42f8-af91-d2b7c3218e5c)" width="52" height="24"></rect>
-              </svg>
-              <span className="relative">Contact Me</span>
-            </span>
-          </h2>
-        </div>
-        <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
-          <a href="mailto:rcena.msi@gmail.com" target="_blank" rel="noreferrer" aria-label="">
-            <div className="relative  p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
-              <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-blue-500 group-hover:scale-x-100"></div>
-              <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-blue-500 group-hover:scale-y-100"></div>
-              <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-blue-500 group-hover:scale-x-100"></div>
-              <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-blue-500 group-hover:scale-y-100"></div>
-              <div className="relative p-5 bg-white rounded-sm">
-                <div className="flex flex-col items-center  mb-2 lg:flex-row">
-                  <div className="flex items-center justify-center w-16 h-16 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0"><i className="fa-solid fa-envelope text-blue-700 text-3xl "></i></div>
-                  <h6 className="font-semibold leading-5">Email</h6>
-                </div>
-                <p className="mb-2 text-sm text-gray-900 text-center lg:text-start">Let's get in touch.</p>
-              </div>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/romario-cena/" target="_blank" rel="noreferrer" aria-label="">
-            <div className="relative  p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
-              <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-blue-500 group-hover:scale-x-100"></div>
-              <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-blue-500 group-hover:scale-y-100"></div>
-              <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-blue-500 group-hover:scale-x-100"></div>
-              <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-blue-500 group-hover:scale-y-100"></div>
-              <div className="relative p-5 bg-white rounded-sm">
-                <div className="flex flex-col items-center  mb-2 lg:flex-row">
-                  <div className="flex items-center justify-center w-16 h-16 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0"><i className="fa-brands fa-linkedin text-blue-700 text-3xl "></i></div>
-                  <h6 className="font-semibold leading-5">LinkedIn</h6>
-                </div>
-                <p className="mb-2 text-sm text-gray-900 text-center lg:text-start">Let's connect.</p>
-              </div>
-            </div>
-          </a>
-          <a href="https://github.com/ts-roms" target="_blank" rel="noreferrer" aria-label="">
-            <div className="relative  p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
-              <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-blue-500 group-hover:scale-x-100"></div>
-              <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-blue-500 group-hover:scale-y-100"></div>
-              <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-blue-500 group-hover:scale-x-100"></div>
-              <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-blue-500 group-hover:scale-y-100"></div>
-              <div className="relative p-5 bg-white rounded-sm">
-                <div className="flex flex-col items-center  mb-2 lg:flex-row">
-                  <div className="flex items-center justify-center w-16 h-16 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0"><i className="fa-brands fa-github text-blue-700 text-3xl "></i></div>
-                  <h6 className="font-semibold leading-5">GitHub</h6>
-                </div>
-                <p className="mb-2 text-sm text-gray-900 text-center lg:text-start">Check out my repos.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
+
+
       <div id="skills" className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12">
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
@@ -123,45 +84,122 @@ const ProfilePage: React.FC = () => {
           <div className="text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 mx-auto sm:w-24 sm:h-24"><i className="fab fa-html5 text-blue-700 text-4xl" aria-hidden="true"></i></div>
             <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">FrontEnd</h6>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">HTML</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">CSS</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">JavaScript</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">React</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">Redux</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">NextJs</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">TailwindCSS</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">Bootstrap</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">jQuery</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">APIs</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">MaterialUI</p>
+            {
+              frontend.map((fe: string) => <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">{fe}</p>)
+            }
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 mx-auto sm:w-24 sm:h-24"><i className="fa-solid fa-code text-blue-700 text-4xl" aria-hidden="true"></i></div>
             <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">BackEnd</h6>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">NodeJS</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">Express</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">MySQL</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">Sequelize</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">MongoDB</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">Mongoose</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">GraphQL</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">Apollo</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">RestAPI</p>
+            {
+              backend.map((be: string) => <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">{be}</p>)
+            }
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 mx-auto sm:w-24 sm:h-24"><i className="fa-solid fa-screwdriver-wrench text-blue-700 text-4xl" aria-hidden="true"></i></div>
             <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">Tools</h6>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">Git</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">GitHub</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">Vercel</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">VSCode</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">Postman</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">Webpack</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">TypeScript</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">Jest</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">Scrum Board</p>
-            <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">IntelliJ</p>
+            {
+              tools.map((tool: string) =>
+                <p className="max-w-md mb-3 text-sm text-gray-900 mx-auto">{tool}</p>
+              )
+            }
           </div>
+        </div>
+      </div>
+
+      <div id="projects" className="bg-gray-900">
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+          <div className="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12">
+            <h2 className="max-w-lg mx-auto mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
+              <span className="relative inline-block">
+                <svg viewBox="0 0 52 24" fill="currentColor" className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                  <defs>
+                    <pattern id="27df4f81-c854-45de-942a-fe90f7a300f9" x="0" y="0" width=".135" height=".30">
+                      <circle cx="1" cy="1" r=".7"></circle>
+                    </pattern>
+                  </defs>
+                  <rect fill="url(#27df4f81-c854-45de-942a-fe90f7a300f9)" width="52" height="24"></rect>
+                </svg>
+                <span className="relative">Projects</span>
+              </span>
+            </h2>
+          </div>
+          <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full !hidden">
+            <div className="border border-gray-800 flex flex-col overflow-hidden transition-shadow duration-300 rounded shadow-md">
+              <div className="p-5 flex flex-col bg-white flex-1">
+                <h1 className="inline-block mb-3 text-2xl font-bold leading-5">ConnectME</h1>
+                <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5">Social Media</h2>
+                <p className="mb-2 text-gray-700">ConnectME is a social media application that allows users to create an account, make posts, and interact with other users. It is built using the MERN stack (MongoDB, Express, React, Node.js) and is deployed on Heroku.</p>
+                <div className="relative inline-block text-left">
+                  <div>
+                    <button type="button" className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                      Demo Account
+                      <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div className="absolute w-full right-0 z-10 mt-2 origin-top-right rounded-md bg-white shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
+                    <div className="py-1" role="none">
+                      <p className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex={-1} id="menu-item-2">
+                        Email: demo@example.com
+                      </p>
+                      <p className="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex={-1} id="menu-item-2">
+                        Password: Demo1234$
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-wrap space-x-2 mt-5">
+                  <h2 className="inline-block text-gray-600 mb-3 text-xl font-bold leading-5">Technologies:</h2>
+                  <span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">ReactJS</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">Redux</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">TailwindCSS</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">JavaScript</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">TypeScript</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">NodeJS</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">Express</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">MongoDB</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">GraphQL</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">Webpack</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">OAuth2</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">FontAwesome</span><span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">Heroku</span>
+                </div>
+                <div className="flex flex-wrap space-x-2 mt-5"><a href="#" target="_blank" rel="noreferrer" aria-label="" className="inline-flex px-4 py-2 items-center transform font-semibold border transition duration-300 hover:scale-105 shadow hover:shadow-lg">Live Demo</a><a href="https://github.com/jimenezraul/social-media" target="_blank" rel="noreferrer" aria-label="" className="inline-flex bg-blue-500 hover:bg-blue-700 shadow hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:scale-105 text-white">Source Code</a></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="contact-me" className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
+        <div className="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12">
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            <span className="relative inline-block">
+              <svg viewBox="0 0 52 24" fill="currentColor" className="absolute top-0 -right-28 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                <defs>
+                  <pattern id="df31b9f6-a505-42f8-af91-d2b7c3218e5c" x="0" y="0" width=".135" height=".30">
+                    <circle cx="1" cy="1" r=".7"></circle>
+                  </pattern>
+                </defs>
+                <rect fill="url(#df31b9f6-a505-42f8-af91-d2b7c3218e5c)" width="52" height="24"></rect>
+              </svg>
+              <span className="relative">Contact Me</span>
+            </span>
+          </h2>
+        </div>
+        <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
+          {
+            contactMe.map((contact: any) => (
+              <a href={contact.link} target="_blank" rel="noreferrer" aria-label="">
+                <div className="relative  p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
+                  <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-blue-500 group-hover:scale-x-100"></div>
+                  <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-blue-500 group-hover:scale-y-100"></div>
+                  <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-blue-500 group-hover:scale-x-100"></div>
+                  <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-blue-500 group-hover:scale-y-100"></div>
+                  <div className="relative p-5 bg-white rounded-sm">
+                    <div className="flex flex-col items-center  mb-2 lg:flex-row">
+                      <div className="flex items-center justify-center w-16 h-16 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
+                        {contact.icon}
+                      </div>
+                      <h6 className="font-semibold leading-5">{contact.title}</h6>
+                    </div>
+                    <p className="mb-2 text-sm text-gray-900 text-center lg:text-start">{contact.description}</p>
+                  </div>
+                </div>
+              </a>
+            ))
+          }
         </div>
       </div>
     </>
