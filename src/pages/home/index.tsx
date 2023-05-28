@@ -138,7 +138,7 @@ const ProfilePage = ({ }: PageProps) => {
                   <span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">TypeScript</span>
                   <span className="px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">Vercel</span>
                 </div>
-                <div className="flex flex-wrap space-x-2 mt-5"><a href="#" target="_blank" rel="noreferrer" aria-label="" className="inline-flex px-4 py-2 items-center transform font-semibold border transition duration-300 hover:scale-105 shadow hover:shadow-lg">Live Demo</a><a href="https://github.com/ts-roms/bookme-app.git" target="_blank" rel="noreferrer" aria-label="" className="inline-flex bg-blue-500 hover:bg-blue-700 shadow hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:scale-105 text-white">Source Code</a></div>
+                <div className="flex flex-wrap space-x-2 mt-5"><a href="https://bookme-app-sooty.vercel.app/" target="_blank" rel="noreferrer" aria-label="" className="inline-flex px-4 py-2 items-center transform font-semibold border transition duration-300 hover:scale-105 shadow hover:shadow-lg">Live Demo</a><a href="https://github.com/ts-roms/bookme-app.git" target="_blank" rel="noreferrer" aria-label="" className="inline-flex bg-blue-500 hover:bg-blue-700 shadow hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:scale-105 text-white">Source Code</a></div>
               </div>
             </div>
 
